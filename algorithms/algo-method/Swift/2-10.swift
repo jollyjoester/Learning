@@ -7,13 +7,9 @@ func main() {
     let m = nm[1]
     
     var sArray = Array(s)
-    
-    let tmp = sArray[n-1]
-    sArray[n-1] = sArray[m-1]
-    sArray[m-1] = tmp
+    sArray.swapAt(n-1, m-1)
 
     let output = String(sArray)
-    
     print(output)
 }
 
